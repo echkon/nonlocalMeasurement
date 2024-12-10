@@ -1,8 +1,8 @@
 import sys
-sys.path.insert(0, '../../../')
+sys.path.insert(0, '../../')
 import numpy as np
 import matplotlib.pyplot as plt
-from qutip import basis, tensor, sigmax, sigmaz, ket2dm
+from qutip import qobj,basis, tensor, sigmax, sigmaz, ket2dm
 from base.entanglementMeasure import *
 from base.witness import variationalWitness
 from base.randomState import pureStates
