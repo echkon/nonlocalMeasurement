@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(0, '../')
+sys.path.insert(0, '../../')
 import numpy as np
 import matplotlib.pyplot as plt
 from qutip import basis, tensor, sigmax, sigmaz
