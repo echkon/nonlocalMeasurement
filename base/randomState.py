@@ -140,8 +140,6 @@ def generate_ad_cossine():
     b = 10e-12
     c = 10e-12
     
-    # Verify the condition a^2 + |b|^2 = 1
-    #assert np.isclose(a**2 + abs(d)**2, 1), "Condition a^2 + |b|^2 = 1 is not satisfied"
     norm = np.sqrt(np.abs(a)**2 + np.abs(b)**2 + np.abs(c)**2 + np.abs(d)**2)
     a /= norm
     b /= norm
