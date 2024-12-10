@@ -8,7 +8,7 @@ def pureStates():
     up = basis(2, 0)
     dn = basis(2, 1)
     states = []
-  
+    
     for i in range(50):
         a, b, c, d = generate_separable_state()
         st = a*tensor(up,up) + b*tensor(up,dn) + c*tensor(dn,up) + d*tensor(dn,dn)
@@ -139,7 +139,7 @@ def generate_ad_cossine():
     d = np.sin(theta) * np.exp(1j * phi)
     b = 10e-12
     c = 10e-12
-   
+    
     # Verify the condition a^2 + |b|^2 = 1
     #assert np.isclose(a**2 + abs(d)**2, 1), "Condition a^2 + |b|^2 = 1 is not satisfied"
     norm = np.sqrt(np.abs(a)**2 + np.abs(b)**2 + np.abs(c)**2 + np.abs(d)**2)
